@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main{
+ public static void main(Striinig[]args){
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter size of array");
+  int n =sc.next.Int();
+  int[]a=new int int[n];;
+  System.out.println("Enter" +n+ "elements" );
+  for(int i=0; i<n; i++){
+   a[i]=sc.nextInt();
+  }
+  System.out.println("Enter element to search");
+  int s=sc.nextInt();
+  int i;
+  for(i=0; i<n; i++){
+    if(a[i]==s){
+     System.out.println("Item found at position" +(i + 1));
+     break;
+    }
+   }
+   if(i==n){
+    System.out.println("Item not found");
+   }
+  }
+}
