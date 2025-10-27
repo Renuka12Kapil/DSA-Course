@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String[]args){
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter size of sorted array");
+  int n=sc.nextInt();
+  int []a=new int[n];
+  System.out.println("Enter" +n+ "elements");
+  for(int i=0; i<n; i++){
+   a[i]=sc.nextInt();
+  }
+  System.out.println("Enter element to search");
+  int s=sc.nextInt();
+  int beg=0;
+  int end=n-1;
+  int mid;
+  while(beg <=end){
+   int mid=(beg=end)/2;
+   if(a[mid]==s){
+    System.out.println("Item found at position" +(MID +1));
+    break;
+   }
+   else if(s>a[mid]){
+    beg=mid+1;
+   }
+   else{
+    end=mid + 1;
+   }
+  }
+  if(beg>end){
+   System.out.println("Item not found");
+  }
+ }
+}
+   
